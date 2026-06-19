@@ -114,3 +114,18 @@
             </div>
 
       </div>
+
+      <div class="col-8 offset-3 mb-3">
+  <h3>Where you'll be</h3>
+  <div id="map"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.css" />
+<script src="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.umd.min.js"></script>
+
+<script>
+  const mapToken = "<%= mapToken %>";
+  const listing = JSON.parse('<%- JSON.stringify(listing) %>');
+</script>
+
+<script src="/js/map.js"></script>
