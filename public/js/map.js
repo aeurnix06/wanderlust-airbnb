@@ -1,3 +1,5 @@
+console.log("mapToken:", mapToken);
+console.log("listing geometry:", listing.geometry);
 maptilersdk.config.apiKey = mapToken;
 
 const map = new maptilersdk.Map({
